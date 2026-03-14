@@ -7,8 +7,8 @@ running = True
 @app.route('/')
 def todo_list():
     result = "To-Do List<br>"
-    for i, task in enumerate(tasks, 1):
-        result += str(i) + ". " + task + "<br>"
+    for task in tasks:
+        result += task + "<br>"
     return result
 
 
